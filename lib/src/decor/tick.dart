@@ -172,7 +172,7 @@ class TextTickLabeler implements TickLabeler {
     tickArea.drawText(
       tickArea.center,
       text,
-      shift: new Offset(0.5, 0.5),
+      shift: offset,
       options: textOptions,
       rotation: rotation,
       rotationOrigin: new Offset(0.5, 0.5),
