@@ -141,7 +141,7 @@ class ChartAxis<Value> {
     this.hideLine: false,
     this.hideTickNotch: false,
     this.tickLabelerStyle: const TextStyle(color: Colors.black),
-    this.tickOffset,
+    this.tickOffset: const Offset(0.5,0.5),
   })  : this.spanFn = spanFn ??
             ((values) => new ListSpan<Value>(values.toSet().toList())),
         this.tickGenerator = tickGenerator ?? new AutoTickGenerator<Value>();

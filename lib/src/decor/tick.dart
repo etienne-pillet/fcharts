@@ -97,7 +97,7 @@ class TextTickLabeler implements TickLabeler {
   const TextTickLabeler({
     @required this.text,
     @required this.style,
-    this.offset: Offset.zero,
+    this.offset: const Offset(0.5,0.5),
     this.rotation: 0.0,
     this.distance: 8.0,
   });
