@@ -196,7 +196,8 @@ class CanvasArea {
       canvas.translate(0.0, 0.0);
 
       // pre shift before rotation transform
-      canvas.translate(-shift.dx, -shift.dy * painter.height);
+      final translateX = shift.dx < 1.0 && shift.dx > -1.0 ? (-shift.dx * painter.width) : -shift.dx;
+      canvas.translate(translateX, -shift.dy * painter.height);
 
       if (rotation != 0.0) {
         final dx = painter.width * rotationOrigin.dx;
